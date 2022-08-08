@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.top-header {
+  background-color: #000;
+  color: #fff;
+  height: 22px;
+  line-height: 22px;
+
+  font-size: 13px;
+  padding: 0;
+}
+.time-open {
+  display: block;
+  float: left;
+  /* position: absolute; */
+  width: 285px;
+  /* box-sizing: border-box; */
+  /* text-size-adjust: 100%; */
+  margin-top: 0px;
+  line-height: 22px;
+}
+.top-login li {
+  display: block;
+  float: right;
+  list-style: none;
+  line-height: 22px;
+  /* position: absolute; */
+}
+.top-login li a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+.top-login li a:hover {
+  color: #f9a678;
+}
+
+.site-header-inner {
+  display: flex;
+}
+.header-left {
+  width: 263px;
+}
+.header-center {
+  display: flex;
+  align-items: center;
+}
+.search-text {
+  /* float: left; */
+  height: 40px;
+  width: 700px;
+  text-align: left;
+  border: 1px solid #e5e5e5;
+  margin: 0;
+  clear: right;
+}
+.btn-search {
+  height: 40px;
+  width: 42px;
+  background-color: #de1e33;
+  color: #fff;
+  border: 1px solid #de1e33;
+  text-align: center;
+  border-radius: 0;
+}
+
+.bot-header .contener {
+  display: flex;
+  align-items: center;
+  background-color: #e9ebee;
+}
+.bot-header-left a {
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  width: 235px;
+}
+.bot-header-left a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  /* line-height: 16px; */
+  font-size: 14px;
+}
+.bot-header-left .menu-icon {
+  font-size: 16px;
+  font-weight: 900;
+  padding: 0 8px;
+}
+.bot-header-center {
+  flex: 1;
+}
+.bot-header-center ul {
+  display: flex;
+
+}
+.bot-header-center ul li {
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+}
+.bot-header-center li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: 650;
+  font-size: 14px;
+}
+.bot-header-center li a img {
+  height: 40px;
+}
+.bot-header-right {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.bot-header-right p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.bot-header-right .hotline {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.body .highlight-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e9ebee;
+
+}
+.highlight-info p {
+  margin: 5px 0;
+
+}
+
