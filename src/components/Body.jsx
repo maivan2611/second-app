@@ -9,7 +9,7 @@ function Body(props) {
             <div className="highlight-info">
                 <h1 style={{color:'#de1e33'}}>BẢNG GIÁ ĐIỆN THOẠI GIÁ SỈ</h1>
                 <h1 style={{color: '#cc00ff'}}>BAO ĐỔI 1 ĐỔI 1 TRONG VÒNG 7 NGÀY</h1>
-                <div style={{color:'#0000ff', backgroundColor: '#f3e920', width:'100%'}}><h1>CẬP NHẬT NGÀY 04/08/2022</h1></div>
+                <div style={{color:'#0000ff', backgroundColor: '#f3e920', width:'100%'}}><h1 style={{textAlign: 'center'}}>CẬP NHẬT NGÀY 04/08/2022</h1></div>
                 <div style={{color:'#0026ff'}}>GIÁ ÁP DỤNG KHÁCH HÀNG SỈ(LẼ CỘNG THÊM 300K)</div>
                 <h4>GIAO HÀNG TẬN NƠI MIỄN PHÍ TOÀN QUỐC</h4>
                 <p>Nhà phân phối IPHONE giá sỉ, điện thoại XÁCH TAY giá sỉ, điện thoại CHÍNH HÃNG giá sỉ</p>

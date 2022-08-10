@@ -6,7 +6,6 @@ class Tables extends Component {
     this.state = {
       priceTables: [
         {
-          id: 1,
           image:
             'http://nguonsidienthoai.com//image/iphone-7-32gb-2924j430x480.jpg',
           name: 'Iphone 6',
@@ -14,7 +13,6 @@ class Tables extends Component {
           note: '',
         },
         {
-          id: 2,
           image:
             'http://nguonsidienthoai.com//image/iphone-7-32gb-2924j430x480.jpg',
           name: 'Iphone 7',
@@ -22,7 +20,6 @@ class Tables extends Component {
           note: '',
         },
         {
-          id: 3,
           image:
             'http://nguonsidienthoai.com//image/iphone-7-32gb-2924j430x480.jpg',
           name: 'Iphone 8 ',
@@ -30,7 +27,6 @@ class Tables extends Component {
           note: '',
         },
         {
-          id: 4,
           image:
             'http://nguonsidienthoai.com//image/iphone-7-32gb-2924j430x480.jpg',
           name: 'Iphone X',
@@ -43,16 +39,45 @@ class Tables extends Component {
 
   renderTableData() {
     return this.state.priceTables.map((priceTable, index) => {
-      const { id, image, name, prices, note } = priceTable;
+      const { image, name, prices, note } = priceTable;
       return (
-        <tr key={id}>
-          <td style={{display: 'none'}}>{id}</td>
-          <td>
-            <img src={image} style= {{height: '70px', width:'70px'}} ></img>
+        <tr>
+          <td
+            style={{
+              border: '1px solid #eceeef',
+              height: '49px',
+              width: '157px',
+            }}
+          >
+            <img src={image} style={{ height: '49px', width: '49px' }}></img>
           </td>
-          <td>{name}</td>
-          <td>{prices}</td>
-          <td>{note}</td>
+          <td
+            style={{
+              border: '1px solid #eceeef',
+              height: '49px',
+              width: '481px',
+            }}
+          >
+            {name}
+          </td>
+          <td
+            style={{
+              border: '1px solid #eceeef',
+              height: '49px',
+              width: '181px',
+            }}
+          >
+            {prices}
+          </td>
+          <td
+            style={{
+              border: '1px solid #eceeef',
+              height: '49px',
+              width: '202px',
+            }}
+          >
+            {note}
+          </td>
         </tr>
       );
     });
@@ -61,16 +86,26 @@ class Tables extends Component {
   renderTableHeader() {
     const header = Object.keys(this.state.priceTables[0]);
     return header.map((key, index) => <th key={index}>{key.toUpperCase()}</th>);
+    // return (
+    //   <thead>
+    //     <tr>
+    //       <th style={{ height: '49px', width: '157px' }}>Hình ảnh</th>
+    //       <th style={{ height: '49px', width: '481px' }}>Sản phẩm</th>
+    //       <th style={{ height: '49px', width: '49px' }}>Giá sỉ</th>
+    //       <th style={{ height: '49px', width: '49px' }}>Ghi chu</th>
+    //     </tr>
+    //   </thead>
+    // );
   }
 
   render() {
     return (
-      <table>
+      <div className='table-bordered'>
         <tbody>
           <tr>{this.renderTableHeader()}</tr>
           {this.renderTableData()}
         </tbody>
-      </table>
+      </div>
     );
   }
 }

@@ -138,6 +138,28 @@
 }
 .highlight-info p {
   margin: 5px 0;
+}
 
+.footer {
+  background-color: #000;
+  color: #d2d2d2;
+  padding: 0 100px;
+}
+.footer-contener {
+  display: flex;
+}
+.footer-item {
+  flex: 1;
+
+}
+.footer-menu-tilte {
+  margin-bottom: 15px;
+}
+.footer-menu {
+  list-style: none;
+  flex-wrap: wrap ;
+}
+.table-bordered {
+  border: '1px solid #eceeef' !important
 }
 
