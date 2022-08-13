@@ -1,20 +1,20 @@
-import Header from './components/Header';
-import { useState } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Routes, Route } from 'react-router-dom';
+import Subweb from './components/Subweb';
+import Main from './components/Main';
 import './components/Web.css';
-import Body from './components/Body';
-import Footer from './components/Footer';
-import TopHeader from './components/Top';
+import './index.css';
 
 function App() {
-  console.log('object');
   // const [color, setColor] = useState('red');
   return (
     <div className='App'>
-      <TopHeader />
-      <Header />
-      <Body />
-      <Footer />
-      
+      <div className='text-3xl font-bold underline'>Hello world!</div>
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/chinh-sach-si' element={<Subweb />} />
+      </Routes>
     </div>
   );
 }

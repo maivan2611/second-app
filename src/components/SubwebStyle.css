@@ -1,0 +1,40 @@
+.margin {
+    margin-bottom: 15px !important;
+}
+.box-contener {
+    display: flex;
+    justify-items: space-between;
+    margin: 0 79px;
+}
+.main-content {
+    flex:3;
+}
+.article-title {
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    letter-spacing: .01em;
+    font-size: 28px;
+    line-height: 30px;
+    color: #252525;
+    font-weight: 400
+}
+.article-content {
+    margin: 20px 0;
+    line-height: 20px;
+    color: #333;
+    box-sizing: border-box;
+    font-family: Arial, serif;
+    font-size: 14px;
+    text-align: start;
+
+}
+.banner {
+    flex: 1;
+    margin: 0 15px;
+}
+.banner img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
