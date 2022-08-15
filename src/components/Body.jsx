@@ -7,7 +7,7 @@ function Body(props) {
     return (
         <div className='body'>
             <div className="highlight-info">
-                <h1 style={{color:'#de1e33'}}>BẢNG GIÁ ĐIỆN THOẠI GIÁ SỈ</h1>
+                <div className="text-3xl bg- ">BẢNG GIÁ ĐIỆN THOẠI GIÁ SỈ</div>
                 <h1 style={{color: '#cc00ff'}}>BAO ĐỔI 1 ĐỔI 1 TRONG VÒNG 7 NGÀY</h1>
                 <div style={{color:'#0000ff', backgroundColor: '#f3e920', width:'100%'}}><h1 style={{textAlign: 'center'}}>CẬP NHẬT NGÀY 04/08/2022</h1></div>
                 <div style={{color:'#0026ff'}}>GIÁ ÁP DỤNG KHÁCH HÀNG SỈ(LẼ CỘNG THÊM 300K)</div>

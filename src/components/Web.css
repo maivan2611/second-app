@@ -51,10 +51,10 @@
 
 .site-header-inner {
   display: flex;
-  margin: 0 79px;
+  margin: 0 px;
 }
 .header-left {
-  width: 263px;
+  /* width: 263px; */
 }
 .header-center {
   display: flex;

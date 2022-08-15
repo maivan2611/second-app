@@ -15,7 +15,7 @@ function Main() {
             <Body />
             <Footer />
             <Button />
-            <h1 className='ml-7 text-center'>Hello world!</h1>
+            
         </div>
     );
 }
