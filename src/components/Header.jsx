@@ -67,7 +67,7 @@ function Header(props) {
             </ul>
           </div>
           <div className="bot-header-right">
-            <p ><CallIcon sx={{ fontSize: '14px' }} /> Hotline: </p>
+            <p><i className="fa fa-phone-square text-[#de1e33] text-base"></i> Hotline: </p>
             <b><a className='hotline' href="tel:0936606660" > 0936606660</a></b>
 
           </div>

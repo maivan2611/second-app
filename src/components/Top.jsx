@@ -1,32 +1,37 @@
 import React from 'react';
+import { useState } from "react";
+import Login from './Login';
 
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import Person from '@mui/icons-material/Person';
-import LockOpen from '@mui/icons-material/LockOpen';
-import SearchIcon from '@mui/icons-material/Search';
+
 function TopHeader(props) {
+  const [isOpen, setIsOpen] = useState(false)
+  function handleClickLogin() {
+    setIsOpen(true)
+  }
+  function handleOffModal() {
+    setIsOpen(false)
+  }
   return (
     <div className="top-header">
       <div className='time-open'>
         <div>
-          
-          <AccessTimeIcon className= "text-sm color-" /> Giờ mở cửa: 8:00 - 20:00
+          <i className="fa fa-clock-o"></i>
+          Giờ mở cửa: 8:00 - 20:00
         </div>
       </div>
       <ul className='top-login'>
         <li>
-          <LockOpen />
-          <a href="" style={{paddingRight: '15px'}}>Đăng kí</a>
+          <i className="fa fa-unlock-alt"></i>
+          <a href="" style={{ paddingRight: '15px' }}>Đăng kí</a>
         </li>
         <li>
           {/* <Person sx={{ fontSize: '14px' }} style={{padding: '3px 8px 0'}}/> */}
-          <Person />
-          <a href="">Đăng nhập</a>
-          <span style={{  padding: '0 10px'}}>/</span>
+          <i className="fa fa-user"></i>
+          <button onClick={handleClickLogin}>Đăng nhập</button>
+          <span style={{ padding: '0 10px' }}>/</span>
         </li>
-
-        
       </ul>
+      {isOpen && <Login setIsOpenPropName={setIsOpen} />}
     </div>
   );
 }
