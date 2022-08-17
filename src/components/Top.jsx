@@ -6,7 +6,8 @@ import SignUp from './SignUp';
 
 function TopHeader(props) {
   const [isOpen, setIsOpen] = useState(false)
-  function handleClickLogin() {
+  const [isOpen2, setIsOpen2] = useState(false)
+  function handleClickLogin(props) {
     setIsOpen(true)
   }
   function handleOffModal() {
@@ -23,18 +24,18 @@ function TopHeader(props) {
       <ul className='top-login'>
         <li>
           <i className="fa fa-unlock-alt"></i>
-          <button >Đăng kí</button>
+          <button className='text-[#fff] hover:text-[#f9a678]' onClick={() => setIsOpen2(true)}>Đăng kí</button>
 
         </li>
         <li>
           {/* <Person sx={{ fontSize: '14px' }} style={{padding: '3px 8px 0'}}/> */}
           <i className="fa fa-user"></i>
-          <button onClick={handleClickLogin}>Đăng nhập</button>
+          <button className='text-[#fff] hover:text-[#f9a678]' onClick={handleClickLogin}>Đăng nhập</button>
           <span style={{ padding: '0 10px' }}>/</span>
         </li>
       </ul>
-      {isOpen && <Login setIsOpenPropName={setIsOpen} />}
-
+      {isOpen && <Login setIsOpenPropName={setIsOpen}   />}
+      {isOpen2  && <SignUp setIsOpenPropName={setIsOpen2} />}
     </div>
   );
 }
