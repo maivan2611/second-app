@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import Login from './Login';
+import SignUp from './SignUp';
 
 
 function TopHeader(props) {
@@ -22,7 +23,8 @@ function TopHeader(props) {
       <ul className='top-login'>
         <li>
           <i className="fa fa-unlock-alt"></i>
-          <a href="" style={{ paddingRight: '15px' }}>Đăng kí</a>
+          <button >Đăng kí</button>
+          
         </li>
         <li>
           {/* <Person sx={{ fontSize: '14px' }} style={{padding: '3px 8px 0'}}/> */}
@@ -32,6 +34,7 @@ function TopHeader(props) {
         </li>
       </ul>
       {isOpen && <Login setIsOpenPropName={setIsOpen} />}
+      
     </div>
   );
 }

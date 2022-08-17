@@ -12,10 +12,10 @@ function Main() {
 
             <TopHeader />
             <Header />
-            <Body />
+            <Body></Body>
             <Footer />
             <Button />
-            
+
         </div>
     );
 }

@@ -18,6 +18,7 @@ function Body(props) {
                 <p className='text-[14px] text-[#333333] leading[1.7] my-[5px]'> <i className="fa fa-clock-o text-sm text-[#0000ff]"></i> Thời gian làm việc từ  <span className='text-lg text-[#de1e33] '> 9h - 19h (Chủ nhật từ 9h - 12h)</span></p>
                 <p className='text-[14px] text-[#333333] leading[1.7] my-[5px]'> <i className="fa fa-clock-o text-sm text-[#0000ff]"></i> Thời gian nhận trả bảo hành sau <span className='text-lg text-[#de1e33] '>12h mỗi ngày</span></p>
             </div>
+            
             <div className="product-table">
                 <Tables />
 
