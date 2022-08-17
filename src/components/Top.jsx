@@ -24,7 +24,7 @@ function TopHeader(props) {
         <li>
           <i className="fa fa-unlock-alt"></i>
           <button >Đăng kí</button>
-          
+
         </li>
         <li>
           {/* <Person sx={{ fontSize: '14px' }} style={{padding: '3px 8px 0'}}/> */}
@@ -34,7 +34,7 @@ function TopHeader(props) {
         </li>
       </ul>
       {isOpen && <Login setIsOpenPropName={setIsOpen} />}
-      
+
     </div>
   );
 }

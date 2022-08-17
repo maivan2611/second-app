@@ -7,7 +7,7 @@ function Login(props) {
   return (
 
     <Modal handleClose={setIsOpenPropName}>
-      <div className='relative w-[520px] h-[324px] py-[20px] px-[30px] bg-white mt-2.5 mx-auto'>
+      <div className='relative w-[520px] h-[324px] py-[20px] px-[30px] bg-white mt-7 mx-auto'>
         <form className='flex flex-col gap-5 items-center '>
           <div className='text-4xl text-[#252525] text-medium leading-[32px] tracking-[0.36px]'>Đăng nhập</div>
           <div className='border border-[e1e1e1] w-[100%]'>
