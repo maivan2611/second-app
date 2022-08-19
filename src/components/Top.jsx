@@ -17,22 +17,21 @@ function TopHeader(props) {
     <div className="top-header">
       <div className='time-open'>
         <div>
-          <i className="fa fa-clock-o"></i>
+          <i className="fa fa-clock-o mr-3"></i>
           Giờ mở cửa: 8:00 - 20:00
         </div>
       </div>
       <ul className='top-login'>
-        <li>
-          <i className="fa fa-unlock-alt"></i>
-          <button className='text-[#fff] hover:text-[#f9a678]' onClick={() => setIsOpen2(true)}>Đăng kí</button>
-
-        </li>
-        <li>
-          {/* <Person sx={{ fontSize: '14px' }} style={{padding: '3px 8px 0'}}/> */}
-          <i className="fa fa-user"></i>
+         <li>
+          <i className="fa fa-user mr-2"></i>
           <button className='text-[#fff] hover:text-[#f9a678]' onClick={handleClickLogin}>Đăng nhập</button>
           <span style={{ padding: '0 10px' }}>/</span>
         </li>
+        <li>
+          <i className="fa fa-unlock-alt mr-2"></i>
+          <button className='text-[#fff] hover:text-[#f9a678] ml-8px' onClick={() => {setIsOpen2(true)}}>Đăng ký</button>
+        </li>
+       
       </ul>
       {isOpen && <Login setIsOpenPropName={setIsOpen}   />}
       {isOpen2  && <SignUp setIsOpenPropName={setIsOpen2} />}

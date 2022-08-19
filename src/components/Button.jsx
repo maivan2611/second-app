@@ -12,6 +12,9 @@ function Button(props) {
                 <span class="text-white-500">093 660 6660</span>
             </a>
             <a href="/" className="return-to-top"> <KeyboardDoubleArrowUpIcon className='double-up' /> </a>
+            <a href="https://zalo.me/0936606660" class="phone-zalo ">
+                <img src="https://caohungphat.com/wp-content/uploads/2019/07/icon_zalomessage.png" alt="" className="w-9 h-9 m-auto"/>
+            </a>
 
         </div>
     );

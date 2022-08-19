@@ -9,14 +9,14 @@ import Login from './Login';
 function Main() {
     return (
         <div>
-
-            <TopHeader />
-            <Header />
-            <Body></Body>
-            <Footer />
-            <Button />
-
-        </div>
+            <div className="mx-auto">
+                <TopHeader />
+                <Header />
+                <Body></Body>
+                <Footer />
+                <Button />
+            </div>
+        </div >
     );
 }
 export default Main

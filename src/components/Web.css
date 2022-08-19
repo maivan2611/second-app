@@ -16,27 +16,22 @@
   color: #fff;
   height: 22px;
   line-height: 22px;
-  
+  display: flex;
+  justify-content: space-between;
   font-size: 13px;
   padding: 0;
 }
 .time-open {
-  display: block;
-  float: left;
-  /* position: absolute; */
   width: 285px;
-  /* box-sizing: border-box; */
-  /* text-size-adjust: 100%; */
-  margin-top: 0px;
+
   line-height: 22px;
   
 }
 .top-login {
-  
+  display: flex;
 }
 .top-login li {
-  display: block;
-  float: right;
+
   list-style: none;
   line-height: 22px;
   /* margin-right: 79px; */
@@ -265,5 +260,25 @@
   line-height: 18px;
   display: inline-block;
  
+}
+
+.phone-zalo {
+  box-sizing: border-box;
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  line-height: 36px;
+  background: #0068ff;
+  text-decoration: none;
+  box-shadow: 0 0 3px #ccc;
+  z-index: 990;
+  border-radius: 30px;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 3px;
 }
 
