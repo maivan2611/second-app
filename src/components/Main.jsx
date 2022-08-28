@@ -6,6 +6,8 @@ import Footer from './Footer';
 import TopHeader from './Top';
 import Button from './Button';
 import Login from './Login';
+import Contact from './Contact';
+
 function Main() {
     return (
         <div>
@@ -13,6 +15,7 @@ function Main() {
                 <TopHeader />
                 <Header />
                 <Body></Body>
+                <Contact/>
                 <Footer />
                 <Button />
             </div>
