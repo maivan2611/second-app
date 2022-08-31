@@ -7,6 +7,7 @@ import TopHeader from './Top';
 import Button from './Button';
 import Login from './Login';
 import Contact from './Contact';
+import Detail from './Detail';
 
 function Main() {
     return (
@@ -16,6 +17,7 @@ function Main() {
                 <Header />
                 <Body></Body>
                 <Contact/>
+                <Detail/>
                 <Footer />
                 <Button />
             </div>
