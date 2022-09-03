@@ -16,8 +16,7 @@ function Main() {
                 <TopHeader />
                 <Header />
                 <Body></Body>
-                <Contact/>
-                <Detail/>
+                
                 <Footer />
                 <Button />
             </div>

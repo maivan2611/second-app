@@ -62,7 +62,7 @@ function Header(props) {
                 <a href="http://nguonsidienthoai.com/tin-cong-nghe-97n.html?view=1">Tin công nghệ</a>
               </li>
               <li>
-                <a href="http://nguonsidienthoai.com/lien-he.html?view=1">Liên hệ</a>
+                <a href="/Lien-he">Liên hệ</a>
               </li>
             </ul>
           </div>
