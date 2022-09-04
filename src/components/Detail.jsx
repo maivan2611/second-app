@@ -1,16 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import TopHeader from './Top';
 import Header from './Header';
 import Footer from './Footer';
 import Button from './Button';
-
+import { priceTables } from'../fake-res/product-list';
+import {
+    useParams
+  } from "react-router-dom";
 function Detail(props) {
     const [count,setCount]=useState(1)
+    const {id} = useParams()
+    
+    console.log(id);
     function decrease() {
         if (count>1) {
             setCount(count - 1)   
         }
     }
+    let product = priceTables.find(function(product) {
+        return product.id == id;
+      });
+    console.log(priceTables);
+    console.log(product.view); // undefined
     return (
         <div >
             <TopHeader/>
@@ -18,11 +29,11 @@ function Detail(props) {
             <div >
                 <div className="flex mx-[79px]">
                     <div className="w-[100%] flex-[40%]">
-                        <img className='w-[458px] h-[458px]' src={props.image}/>
-                        <img className='w-[100px] h-[100px]' src={props.image}/>
+                        <img className='w-[458px] h-[458px]' src={product.image}/>
+                        <img className='w-[100px] h-[100px]' src={product.image}/>
                     </div>
                     <div className="flex-[37%]">
-                        <div className='text-2xl text-black46 font-medium tracking-[0.24px] leading-[30px] mb-2.5'>{props.name}</div>
+                        <div className='text-2xl text-black46 font-medium tracking-[0.24px] leading-[30px] mb-2.5'>{product.name}</div>
                         <div className='text-sm text-black33 leading-[1.7]' >
                             <span className='text-redDe'>
                                 <i className="fa fa-star"></i>
@@ -31,14 +42,14 @@ function Detail(props) {
                                 <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i>
                             </span>
-                            {props.numOfReview} đánh giá
+                            {product.numOfReview} đánh giá
                         </div>
-                        <div className='text-sm text-black33 leading-[30px]'><span className='font-bold'>Lượt xem : </span>{props.view}</div>
-                        <div className='text-sm text-black46 leading-[1.7]'>Giá sỉ : <span className='text-[18px] font-bold text-redDe mr-2.5'>{props.wholesalePrice} </span><a className='font-bold text-black33 hover:text-redDe cursor-pointer'><i class="fa fa-hand-o-right" aria-hidden="true"/> Chính sách giá sỉ</a></div>
-                        <div className='text-sm text-blue35 leading-[1.7] font-bold'>Giá lẻ : <span className='text-[18px] font-bold text-redDe mr-2.5'>{props.retailPrice}</span>(DÀNH CHO KHÁCH MUA LẺ)</div>
-                        <div className='text-sm leading-[1.7] text-black46'>Mã sản phẩm: <span className='font-bold'>{props.productCode}</span></div>
+                        <div className='text-sm text-black33 leading-[30px]'><span className='font-bold'>Lượt xem : </span>{product.view}</div>
+                        <div className='text-sm text-black46 leading-[1.7]'>Giá sỉ : <span className='text-[18px] font-bold text-redDe mr-2.5'>{product.wholesalePrice} </span><a className='font-bold text-black33 hover:text-redDe cursor-pointer'><i class="fa fa-hand-o-right" aria-hidden="true"/> Chính sách giá sỉ</a></div>
+                        <div className='text-sm text-blue35 leading-[1.7] font-bold'>Giá lẻ : <span className='text-[18px] font-bold text-redDe mr-2.5'>{product.retailPrice}</span>(DÀNH CHO KHÁCH MUA LẺ)</div>
+                        <div className='text-sm leading-[1.7] text-black46'>Mã sản phẩm: <span className='font-bold'>{product.productCode}</span></div>
                         <div className='text-sm leading-[1.7] text-black46'>Màu sắc: <span className='font-bold'>Như hình</span></div>
-                        <div className='text-sm leading-[1.7] text-black46'>Tình trạng: <span className='font-bold'>{props.statusProduct}</span></div>
+                        <div className='text-sm leading-[1.7] text-black46'>Tình trạng: <span className='font-bold'>{product.statusProduct}</span></div>
                         <div>
                             Số lượng :
                             <button className='w-8 h-8 border border-coloborder' onClick={decrease}>-</button>

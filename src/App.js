@@ -16,7 +16,7 @@ function App() {
         <Route path='/' element={<Main />} />
         <Route path='/chinh-sach-si' element={<Subweb />} />
         <Route path='/Lien-he' element={<Contact />} />
-        <Route path='/San-pham' element={<Detail />} />
+        <Route path='/san-pham/:id' element={<Detail />} />
       </Routes>
     </div>
   );

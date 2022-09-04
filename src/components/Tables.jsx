@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import { sizeHeight } from '@mui/system';
 import Tbody from './Tbody'
+import Detail from './Detail';
+
 // class Tables extends Component {
 //   constructor(props) {
 //     super(props);
@@ -9,13 +11,20 @@ import Tbody from './Tbody'
 function Tables(props) {
     const priceTables = [
         {
+            id: '1',
             image:
                 'http://nguonsidienthoai.com//image/iphone-7-32gb-2924j430x480.jpg',
             name: 'Iphone 6',
             prices: '1700 USD',
             note: 'Đẹp keng',
+            view: '5587',
+            wholesalePrice: '1700 USD', 
+            retailPrice: '2400 USD',
+            productCode: 'PK583', 
+            statusProduct: 'Còn hàng',
         },
         {
+            id: '2',
             image:
                 'http://nguonsidienthoai.com//image/iphone-7-32gb-2924j430x480.jpg',
             name: 'Iphone 7',
@@ -23,6 +32,7 @@ function Tables(props) {
             note: 'Đẹp keng',
         },
         {
+            id: '3',
             image:
                 'http://nguonsidienthoai.com//image/iphone-7-32gb-2924j430x480.jpg',
             name: 'Iphone 8 ',
@@ -30,14 +40,15 @@ function Tables(props) {
             note: 'Đẹp keng',
         },
         {
+            id: '4',
             image:
                 'http://nguonsidienthoai.com//image/iphone-7-32gb-2924j430x480.jpg',
             name: 'Iphone X',
             prices: '2500 USD',
             note: 'Đẹp keng',
         },
-    ]
-
+    ]   
+    
     return (
         <div>
             <table className=" w-[100%]">
@@ -52,6 +63,7 @@ function Tables(props) {
                 <tbody>
                     {priceTables.map(priceTable => (
                         <Tbody
+                            id={priceTable.id}
                             image={priceTable.image}
                             name={priceTable.name}
                             price={priceTable.prices}
@@ -60,6 +72,7 @@ function Tables(props) {
                     ))}
                 </tbody>
             </table>
+            
         </div>
 
     );
